@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <h1>Speed Motors</h1>
+        <nav>
+            <ul>
+                <li id="li1"><a href="index.html">Início</a></li>
+                <li id="li1"><a href="produtos.html">Produtos</a></li>
+                <li id="li1"><a href="contato.html">Contato</a></li>
+                <li id="li1"><a href="Quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Nome da Empresa: Speed Motors</h2>
+        <h3>Endereço: Avenida dos Automóveis, 1234, Bairro Velocidade, São Paulo, SP, Brasil</h3>
+        <h3>CEP: 01234-567</h3>
+        <h3>Telefone: (11) 98765-4321</h3>
+        <h3>E-mail: contato@speedmotors.com.br</h3>
+        <h3>Website: www.speedmotors.com.br</h3>
+        <h3>Horário de Funcionamento: Segunda a Sexta, das 8h às 18h; Sábado, das 9h às 14h</h3>
+    <form action="https://formsubmit.co/enzof448892@gmail.com" method="POST" id="meuform">
+        <fieldset>
+            <legend>Formulário de Contato da Speed Motors</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="usuario_nome" required />
+ 
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="usuario_email" required />
+ 
+            <label for="msg">Mensagem:</label>
+            <textarea id="msg" name="usuario_msg" required></textarea>
+        </fieldset>
+        <footer class="button">
+            <button type="submit">Enviar sua Mensagem</button>
+        </footer>
+    </form>
+    
+    <section id="resultados">
+        <h2>Dados do Formulário:</h2>
+        <p>Nome:<span id="exibeNome"></span></p>
+        <p>E-mail:<span id="exibeEmail"></span></p>
+        <p>Mensagem:<span id="exibeMensagem"></span></p>
+    </section>
+    <br>
+    <footer id="fim">
+        <p>2024 @Speed_Motors. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+ 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Asset&display=swap');
+ 
+        :root {
+        --cor-primaria: #5e5f60;
+        --cor-secundaria: #A9A9A9;
+        --cor-fundo: rgba(225, 215, 215, 0.653);
+        --cor-destaque: #960707;
+        --cor-texto: #000000;
+        --cor-texto2: rgb(236, 226, 226);
+        --fonte: "IBM Plex Sans", "sans-serif";
+        --fonte2: "Poppins", "sans-serif";
+        }
+
+        h1, #li1{
+        text-shadow: 2px 2px 5px rgba(224, 17, 17, 0.3), 
+               4px 4px 10px rgba(235, 5, 5, 0.811), 
+               6px 6px 15px rgba(238, 235, 235, 0.1);
+        }
+
+        body {
+            font-family: 'Archivo Black', sans-serif;
+            background-image: linear-gradient(var(--cor-fundo), var(--cor-secundaria), var(--cor-primaria));
+            margin: 16px;
+            padding: 0;
+            color: var(--cor-texto);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        header {
+        background-color: var(--cor-primaria);
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        }
+        
+        nav ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        nav ul li {
+        display: inline;
+        margin: 0 1em;
+        }
+
+        nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        }
+
+        form {
+            background-color: var(--cor-secundaria);
+            padding: 20px;
+            border-radius: 15px;
+            width: 400px;
+            margin: 20px 20px 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+ 
+        form fieldset {
+            border: none;
+        }
+ 
+        form legend {
+            font-size: 1.5em;
+            color: var(--cor-texto);
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(224, 17, 17, 0.3), 
+               4px 4px 10px rgba(202, 189, 189, 0.811), 
+               6px 6px 15px rgba(210, 205, 205, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--cor-texto);
+            font-size: 1.1em;
+        }
+ 
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid var(--cor-destaque);
+            border-radius: 8px;
+            font-size: 1em;
+        }
+ 
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--cor-3);
+            box-shadow: 0 0 8px rgba(75, 226, 242, 0.5);
+        }
+ 
+        textarea {
+            resize: vertical;
+        }
+ 
+        button {
+            border: none;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            font-weight: bold;
+        }
+ 
+        button:hover {
+            background-color: var(--cor-3);
+        }
+ 
+        #resultados {
+            margin-top: 30px;
+            background-color: var(--cor-secundaria);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        #resultados p {
+            margin: 10px 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        #fim{
+        background-color: var(--cor-primaria);
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        width: 100%;
+        bottom: 0;
+        }
+    </style>
